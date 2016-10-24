@@ -12,4 +12,4 @@ RUN rm -rf /var/run/apache2 && mkdir -p /var/run/apache2
 RUN ln -sf /dev/stdout -T ${APACHE_LOG_DIR}/error.log
 COPY apache2 /etc/apache2
 COPY entrypoint.sh /
-EXPOSE 3306
+EXPOSE 80
